@@ -53,7 +53,7 @@ gulp.task('imageOptimizer', () => {
 });
 
 gulp.task('spritePNG', () => {
-  gulp.src('../build/img/icons/icon-*.png')
+  gulp.src('build/img/icons/icon-*.png')
       .pipe(spritePNG({
         imgName: 'sprite.png',
         cssName: 'sprite.css'
