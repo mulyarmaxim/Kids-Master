@@ -19,4 +19,16 @@
     background-color: #03617c;
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
   }
+
+
+  &--white {
+    background: #ffffff;
+    color: $page-blue;
+
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+  }
 }
