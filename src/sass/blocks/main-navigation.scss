@@ -1,0 +1,36 @@
+.main-navigation {
+  border-top: 1px solid #80d2e9;
+
+  &__list {
+    @include reset-list();
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+
+  &__item {
+    margin-left:10px;
+  }
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      font-weight: 900;
+      outline-color: #ffffff;
+    }
+  }
+
+}

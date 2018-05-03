@@ -1,0 +1,78 @@
+.user-navigation {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+
+  &__item {
+    margin-left: 35px;
+  }
+
+
+  &__link {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 22px;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    transition: transform linear .2s;
+
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      outline-color: #ffffff;
+    }
+
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 4px;
+
+      background-image: url('../img/sprite.png');
+    }
+
+    &--search {
+      display: block;
+      width: 13px;
+      height: 13px;
+      padding: 0;
+      margin-right: 18px;
+    }
+
+    &--search::before {
+      width: 13px;
+      height: 13px;
+
+      background-position: -267px -108px;
+    }
+
+    &--register::before {
+      top: 3px;
+
+      width: 12px;
+      height: 14px;
+
+      background-position: -267px -139px;
+    }
+
+    &--login::before {
+      width: 14px;
+      height: 12px;
+
+      background-position: -267px -127px;
+    }
+  }
+
+
+}
