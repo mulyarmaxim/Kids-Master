@@ -1,14 +1,16 @@
 .button {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px 22px;
 
   font: 500 16px Roboto, Arial, sans-serif;
   text-decoration: none;
   vertical-align: top;
+  text-transform: uppercase;
+  letter-spacing: .04em;
   color: #ffffff;
 
   background: $page-blue;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color linear .2s;
 
 
