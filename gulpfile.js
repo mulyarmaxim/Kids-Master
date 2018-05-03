@@ -30,7 +30,7 @@ gulp.task('browser-sync', () => {
     server: 'build/'
   });
 
-  gulp.watch('src/sass/**/*.scss', ['style']);
+  gulp.watch('src/sass/**/*.scss', ['style', 'copyHTML']);
   gulp.watch('src/**/*.html', ['copyHTML']);
   gulp.watch('src/js/**/*.js', ['copyJS']);
 
@@ -98,10 +98,10 @@ gulp.task('build', (done) => {
     run(
         'clean',
         'copy',
+        'copyHTML',
         'copyJS',
         'style',
         'imageOptimizer',
         'spritePNG',
-        'copyHTML',
         done);
 });
