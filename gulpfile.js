@@ -98,10 +98,10 @@ gulp.task('build', (done) => {
     run(
         'clean',
         'copy',
-        'copyHTML',
         'copyJS',
         'style',
         'imageOptimizer',
         'spritePNG',
+        'copyHTML',
         done);
 });
