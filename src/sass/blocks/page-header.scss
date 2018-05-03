@@ -1,0 +1,39 @@
+.page-header {
+  padding: 36px 0;
+  padding-bottom: 32px;
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    max-width: 293px;
+  }
+
+
+  &__column {
+    width: 780px;
+  }
+
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+
+  &__contact {
+    width: 390px;
+  }
+
+
+  &__user-navigation {
+    width: 360px;
+  }
+
+}
