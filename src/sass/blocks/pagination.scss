@@ -1,0 +1,35 @@
+.pagination {
+  @include reset-list();
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin: 0 5px;
+  }
+
+
+  &__button {
+    box-sizing: content-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 2px solid $page-blue;
+
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+    &--active {
+      background-color: $page-blue;
+    }
+
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0,0,0, .4);
+    }
+  }
+}
