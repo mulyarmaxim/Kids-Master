@@ -21,8 +21,24 @@
     cursor: pointer;
 
 
+    &--big {
+      width: 11px;
+      height: 11px;
+    }
+
+
+    &--white {
+      background-color: transparent;
+      border-color: #ffffff;
+    }
+
     &--active {
       background-color: $page-blue;
+    }
+    
+    
+    &--active-white {
+      background: #ffffff;
     }
 
 
@@ -31,5 +47,8 @@
       transform: scale(1.2);
       box-shadow: 0 0 10px rgba(0,0,0, .4);
     }
+
   }
+
+
 }
