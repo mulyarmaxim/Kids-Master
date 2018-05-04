@@ -1,0 +1,60 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  text-align: center;
+
+  background: url('../img/bg-decorative-7.jpg') no-repeat bottom center;
+
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: 352px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+    background: url('../img/decoration-border.png') no-repeat top center;
+  }
+
+
+
+  &__image {
+    width: 226px;
+    height: 226px;
+
+    border-radius: 50%;
+  }
+
+
+  &__name {
+    display: block;
+    margin-bottom: 36px;
+
+    font: 700 36px Dosis, Arial, sans-serif;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+
+  &__decription {
+    width: 945px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+
+  &__pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+}
