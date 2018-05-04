@@ -1,0 +1,43 @@
+.instagram {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  &__title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: right;
+    color: $page-blue;
+  }
+
+
+  &__list {
+    @include reset-list();
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    margin-left: 3px;
+  }
+
+  &__link {
+    display: block;
+    width: 99px;
+    height: 99px;
+
+    border-radius: 25px;
+    background: $page-blue;
+    transition: background-color .2s linear;
+
+    &:hover,
+    &:focus {
+      background-color: orange;
+    }
+  }
+}
