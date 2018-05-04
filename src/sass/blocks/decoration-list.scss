@@ -1,0 +1,99 @@
+.decoration-list {
+  @include reset-list();
+
+  display: flex;
+  justify-content: space-between;
+
+
+  &__item {
+    width: 25%;
+
+    color: #000000;
+
+    border-radius: 15px;
+    background-color: #fafafa;
+  }
+
+
+  &__container {
+    box-sizing: border-box;
+    height: 333px;
+    padding: 40px 30px;
+
+    letter-spacing: 0.04em;
+  }
+
+
+  &__image {
+    display: block;
+    height: 333px;
+
+    &--bottom {
+      border-radius: 0 0 15px 15px;
+    }
+  }
+
+
+  &__class {
+    position: relative;
+
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 15px;
+
+    font-weight: 500;
+
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 2px;
+      top: 2px;
+
+      width: 17px;
+      height: 13px;
+
+      background-image: url('../img/sprite.png');
+      background-position: -163px -60px;
+    }
+  }
+
+
+  &__title {
+    margin-top: 0;
+
+    font-family:  'Roboto Slab', Arial, sans-serif;
+    font-size: 24px;
+  }
+
+
+  &__description {
+    height: 125px;
+    margin-bottom: 15px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  &__link {
+    display: inline-block;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $page-blue;
+
+    transition: all .2s;
+
+
+    &:hover,
+    &:focus {
+      color: #03617c;
+      transform: scale(1.1);
+    }
+  }
+
+}
