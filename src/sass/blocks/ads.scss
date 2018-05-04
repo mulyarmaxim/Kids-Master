@@ -1,0 +1,73 @@
+.ads {
+  padding-top: 55px;
+  padding-bottom: 36px;
+
+  color: $page-blue;
+
+  background: #ffffff;
+
+
+  &__title {
+    margin-top: 0;
+
+    font: 700 36px Dosis, Arial, sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+
+  &__navigation {
+
+  }
+
+
+  &__list {
+    @include reset-list();
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__item {
+    width: 360px;
+  }
+
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #212121;
+
+    transition: transform .2s linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__image {
+    margin-bottom: 10px;
+
+    border-radius: 15px;
+  }
+
+
+  &__date {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #212121;
+  }
+
+
+  &__description {
+    margin-top: 0;
+
+    font-size: 16px;
+    letter-spacing: 0.025em;
+  }
+
+
+}
