@@ -1,0 +1,95 @@
+.page-footer {
+  padding-top: 275px;
+  padding-bottom: 230px;
+
+  color: $page-blue;
+
+  background: url('../img/bg-sky.png') repeat-x 0 110px,
+              url('../img/bg-decorative-6.png') repeat-x bottom center,
+              url('../img/bg-rainbow.png') no-repeat right top,
+              linear-gradient($page-blue 0, $page-blue 210px, #ffffff 100px);
+
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+
+    &--big-margin {
+      margin-bottom: 151px;
+    }
+
+
+    &--not-justify {
+      justify-content: flex-start;
+    }
+  }
+
+  &__navigation {
+    @include reset-list();
+  }
+
+  &__navigation-list {
+    @include  reset-list();
+  }
+
+  &__navigation-link {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $page-blue;
+
+    transition: color .2s linear;
+
+    &--gray {
+      font-weight: 400;
+      color: #333333;
+    }
+
+    &:hover {
+      color: #03617c;
+    }
+
+  }
+
+
+  &__contact {
+    width: 263px;
+    margin-right: 127px;
+  }
+
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $page-blue;
+  }
+
+
+  &__instagram {
+    width: 450px;
+    margin-left: auto;
+  }
+
+
+  &__copyright {
+    width: 400px;
+    margin-right: 58px;
+
+    font: 700 14px 'Roboto Slab', Arial, sans-serif;
+    text-transform: uppercase;
+    color: $page-blue;
+  }
+
+
+  &__social {
+    width: 360px;
+    margin-left: auto;
+  }
+}
