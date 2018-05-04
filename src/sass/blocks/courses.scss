@@ -1,0 +1,42 @@
+.courses {
+  padding-top: 52px;
+  padding-bottom: 50px;
+
+  background-color: #ffffff;
+  color: $page-blue;
+
+  text-align: center;
+
+
+  &__inner {
+    text-align: left;
+  }
+
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font: 700 36px/46px Dosis, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+
+  &__description {
+    width: 450px;
+    padding-left: 6px;
+    margin-top: 0;
+    margin-bottom: 42px;
+
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #333333;
+  }
+
+
+  &__button-container {
+    text-align: center;
+  }
+
+}
